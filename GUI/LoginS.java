@@ -18,4 +18,4 @@ public static void main(String[] args) {
 	s1.setComponents() ; 
 	s1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
-}
+} 

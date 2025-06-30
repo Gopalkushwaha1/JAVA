@@ -27,19 +27,20 @@ class Customer implements Runnable {
 	}	
 	public void run() {
 		Scanner sc = new Scanner(System.in) ; 
-		System.out.println("Enter withdraw amount " ) ; 
+		System.out.println("Enter withdraw amount : " ) ; 
 		int amt = sc.nextInt() ; 
 		if ( a1.isSufficent(amt) ) {
 			a1.withdraw(amt) ; 
 		}
 		else {
-			System.out.println("Insufficent Balance " ) ; 
+			System.out.println("Insufficent Balance : " ) ; 
 		}
 	}
 }
 
 class BankAccount {
 	public static void main ( String[] args ) {
+		System.out.println("Bank Balance is :: 5000 " ) ; 
 		Account a = new Account(5000) ; 
 		Customer c1 = new Customer(a) ; 
 		Customer c2 = new Customer(a) ;
